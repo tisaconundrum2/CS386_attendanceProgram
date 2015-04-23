@@ -2,6 +2,7 @@
 <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="http://s.codepen.io/assets/reset/normalize.css">
 <link rel="stylesheet" href="style.css">
+<?php include("server.php"); ?>
 <style type="text/css"></style></head><body>
 <div class="form">
       
@@ -28,6 +29,9 @@
           <button class="button button-block">Add new Course</button>
           
           </form>
+	<form action="selectClass.php" method="post">
+	<button class="button button-block">Back</button>
+	</form>
 
         </div>
         
