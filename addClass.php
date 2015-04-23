@@ -1,8 +1,12 @@
-<html class=""><head><meta charset="UTF-8"><meta name="robots" content="noindex"><link rel="canonical" href="http://codepen.io/anon/pen/XJvKrY">
+<html class=""><head><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><style type="text/css"></style><style type="text/css"></style><style type="text/css"></style><style type="text/css"></style>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script><meta name="robots" content="noindex"><link rel="canonical" href="http://codepen.io/anon/pen/XJvKrY">
 <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="http://s.codepen.io/assets/reset/normalize.css">
 <link rel="stylesheet" href="style.css">
-<?php include("server.php"); ?>
+<!--?php include("server.php"); ?-->
 <style type="text/css"></style></head><body>
 <div class="form">
       
@@ -16,11 +20,31 @@
           
           <form action="/" method="post">
           
-            <div class="field-wrap">
-            <label class="">Class e.g. CS 200<span class="req">*</span>
+            <div class="field-wrap" style="
+    margin-bottom: 20px;
+">
+            <label class="">Class Name<span class="req">*</span>
             </label>
             <input type="class" required="" autocomplete="off">
+  <div class="container" style="
+    margin-top: 10px;
+">
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" aria-expanded="false">Season
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Spring</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Summer</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fall</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Winter</a></li>  
+  
+          
+          
+        </ul>
+      </div>
+    </div>
           </div>
+    
           
           
           
@@ -73,4 +97,5 @@ $('.tab a').on('click', function (e) {
 //@ sourceURL=pen.js
 </script>
 <script src="http://codepen.io/assets/editor/live/css_live_reload_init.js"></script>
+
 </body></html>
