@@ -7,7 +7,6 @@
 <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="http://s.codepen.io/assets/reset/normalize.css">
 <link rel="stylesheet" href="style.css">
-<<<<<<< HEAD
 <!--?php include("server.php"); ?-->
 <style type="text/css"></style><style type="text/css"></style></head><body>
 <?php include("server.php"); ?>
