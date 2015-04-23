@@ -6,18 +6,16 @@
 <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="http://s.codepen.io/assets/reset/normalize.css">
 <link rel="stylesheet" href="style.css">
-<!--?php include("server.php"); ?-->
+<?php include("server.php"); ?>
 <style type="text/css"></style></head><body>
 <div class="form">
       
-      
-      
       <div class="tab-content">
-        
         
         <div id="addClass" style="display: block;">   
           <h1>Add a Class</h1>
           
+<<<<<<< HEAD
           <form action="/" method="post" style="
     margin-bottom: 16px;
 ">
@@ -26,44 +24,75 @@
     margin-bottom: 20px;
 " class="field-wrap">
             <label class="">Class Name<span class="req">*</span>
+=======
+<?php
+if ( isset($_POST['class']) )
+echo $_POST['class'];
+if ( isset($_POST['semseter']) )
+echo $_POST['semester'];
+if ( isset($_POST['year']) )
+echo $_POST['year'];
+?>
+          <form action="/" method="post" style="margin-bottom: 0px;">
+            <div style="margin-bottom: 20px;" class="field-wrap">
+            <label class="">Class Number<span class="req">*</span>
+>>>>>>> c3f890e69a2621bb674cb8a9c29404525000f6be
             </label>
-            <input type="class" required="" autocomplete="off">
+            <input name="class" type="class" required="" autocomplete="off">
   
           </div>
-    
+          <p class="forgot" style="margin-bottom: 0px;"><a>e.g. CS200</a></p>
           
-          
-          
-          <p class="forgot" style="
-    margin-bottom: 0px;
-"><a>e.g. CS200</a></p>
-          
-          
-          
+<<<<<<< HEAD
           <div class="container" style="
     margin-bottom: 20px;
 ">
       <div class="dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" aria-expanded="false">Semester<span class="caret"></span></button>
+=======
+          </form>
+	<form action="/" method="post">
+	<div class="container">
+      <div class="dropdown">
+        <button name="semester" class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" aria-expanded="false">Semester
+        <span class="caret"></span></button>
+>>>>>>> c3f890e69a2621bb674cb8a9c29404525000f6be
         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Spring</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Summer</a></li>
           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fall</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Winter</a></li>  
-  
-          
-          
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Winter</a></li> 
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Spring</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Summer</a></li> 
         </ul>
       </div>
+<<<<<<< HEAD
     </div><div class="field-wrap" style="
     margin-bottom: 20px;
 ">
             <label class="">YEAR<span class="req">*</span>
+=======
+    </div>
+  </form><form action="/" method="post">
+          
+            <div class="field-wrap" style="margin-bottom: 20px;">
+            <label class="">Year<span class="req">*</span>
+>>>>>>> c3f890e69a2621bb674cb8a9c29404525000f6be
             </label>
-            <input type="class" required="" autocomplete="off">
+            <input name="year" type="class" required="" autocomplete="off">
   
+<<<<<<< HEAD
           </div><p class="forgot"><a>e.g. 2000</a></p><button class="button button-block">Search</button></form>
 	<form action="selectClass.php" method="post">
+=======
+          </div>
+          <p class="forgot"><a>e.g. 2015</a></p>
+          </form>
+
+	<form action="addClass.php" method="post">
+	<button class="button button-block">Search</button>
+	</form>
+
+	<form action="selectClass.php" >
+>>>>>>> c3f890e69a2621bb674cb8a9c29404525000f6be
 	<button class="button button-block">Back</button>
 	</form>
 

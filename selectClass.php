@@ -14,23 +14,21 @@
 <?php
 $result=$mysqli->query("select c_id, c_title, c_number from se_uc natural join se_class where u_id ='$_SESSION[user]'");
 while ( $fetch = $result->fetch_assoc() ) { 
-	echo '<form action="/" id="closeup" method="post" style="margin-bottom: 0px;">';
+	echo '<form action="/" method="post" style="margin-bottom: 0px;">';
   	echo '<button class="button button-block">('.$fetch['c_number'].') '.$fetch['c_title'].'</button>';
 	echo '</form>';
 } $result->free();
 ?>
 	
-	<form action="/" id="closeup" method="post">
-	<button class="button button-block" style="
-    margin-top: 16px;
-">Add New Class</button>
-  </form>
+	<form action="addClass.php" >
+	<button class="button button-block" style="margin-top: 16px;">Add New Class</button>
+  	</form>
 
-<form action="/" id="faraway" method="post">
+<form action="/" method="post">
 <button class="button button-block">My Page</button>
 </form>
 
-<form action="logout.php" id="faraway" method="post">
+<form action="logout.php" method="post">
 <button class="button button-block">LogOut</button>
 </form>
 
