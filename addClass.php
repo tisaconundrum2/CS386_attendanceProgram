@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="style.css">
 <!--?php include("server.php"); ?-->
 <style type="text/css"></style><style type="text/css"></style></head><body>
-<?php include("server.php"); ?>
+<!--<?php include("server.php"); ?>-->
 <style type="text/css"></style></head><body>
 <div class="form">
       <div class="tab-content">
