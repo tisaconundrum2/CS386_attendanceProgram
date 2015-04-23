@@ -14,5 +14,7 @@ if (mysqli_connect_errno()) {
 }
 
 print_r( $_POST );
+if (!isset($_SESSION['user'])){$_SESSION['user']=-1;}
+print_r( $_SESSION );
 ?>
 
