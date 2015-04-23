@@ -19,7 +19,7 @@ $fetch = $result->fetch_array(MYSQLI_NUM);
 
 $result=$mysqli->query("select c_id, c_title, c_number from se_uc natural join se_class where u_id ='$_SESSION[user]'");
 while ( $fetch = $result->fetch_assoc() ) { 
-	echo '<form action="/" method="post" style="margin-bottom: 0px;">';
+	echo '<form action="keyword.php?id='.$fetch['c_id'].'" method="post" style="margin-bottom: 0px;">';
   	echo '<button class="button button-block">('.$fetch['c_number'].') '.$fetch['c_title'].'</button>';
 	echo '</form>';
 } $result->free();
@@ -37,7 +37,7 @@ else
 </button>
   	</form>
 
-<form action="/" method="post">
+<?php echo '<form action="userPage.php?id='.$_SESSION['user'].'" method="post">'; ?>
 <button class="button button-block">My Page</button>
 </form>
 

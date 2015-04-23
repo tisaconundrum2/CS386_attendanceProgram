@@ -14,23 +14,29 @@
       <div class="form">
          <div class="tab-content">
             <div id="enterKey" style="display: block;">
-               <h1>View Report</h1>
+               <h1>View User</h1>
                
                <div class="field-wrap">
 <?php
-$result=$mysqli->query("select u_id, u_lname, count(*) x from se_keyword natural join se_uc natural join se_user where c_id =$_GET[id] and u_id !=(select u_professor from se_class where c_id=$_GET[id]) group by u_id order by u_lname");
+ini_set('display_errors',1);
+ini_set('display_startup_errors',1);
+error_reporting(-1);
+$result=$mysqli->query("select u_id, u_lname, u_fname, u_email, u_privlidge from se_user where u_id=$_GET[id]");
 if(!$result){
 	echo "</br>failed";
 	echo $mysqli->error;
 }
-while ( $fetch = $result->fetch_assoc() ) {
-	$subresult=$mysqli->query("select u_lname, u_fname from se_user where u_id=$fetch[u_id]");
-	$row=$subresult->fetch_array(MYSQLI_NUM);
-	echo '<a href="userPage.php?id='.$fetch['u_id'].'">'.$row[0].', '.$row[1].'</a>      <p class="forgot" style="margin-bottom: 0px; color: #FFFFFF;" span="right-align">'.$fetch['x'].'</p>';
-	$subresult->free();
-} $result->free();
+$fetch = $result->fetch_assoc();
+	echo '<p class="forgot" style="color: #FFFFFF;" span="left-align">'.$fetch['u_fname'].' '.$fetch['u_lname'].'</p>';
+	echo '<p class="forgot" style="color: #FFFFFF;" span="left-align">'.$fetch['u_email'].'</p>';
 ?>
                </div>
+<?php if(is_prof($_SESSION['user']) && $fetch['u_privlidge']=='n'){
+		echo '<form action="promoteUser.php?id='.$_GET['id'].'" method="post">';
+                  echo '<button class="button button-block">Promote to Professor</button>';
+               echo '</form>';
+}
+?>
 		<form action="selectClass.php" method="post">
                   <button class="button button-block">Back</button>
                </form>
