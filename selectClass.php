@@ -11,11 +11,13 @@
         <div id="selClass" style="display: block;">   
           <h1>E Attendance</h1>
           
-          <form action="/" id="closeup" method="post">
-
+        <form action="/" id="closeup" method="post">
   	<button class="button button-block">CS 136</button>
-          
-	<button class="button button-block">Add New Class</button></form>
+        </form>
+
+	<form action="/" id="closeup" method="post">
+	<button class="button button-block">Add New Class</button>
+	</form>
 
 <form action="/" id="faraway" method="post">
 <button class="button button-block">My Page</button>
