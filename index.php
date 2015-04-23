@@ -1,4 +1,3 @@
-<html class=""><head><meta charset="UTF-8"><meta name="robots" content="noindex"><link rel="canonical" href="http://codepen.io/anon/pen/XJvKrY">
 <html class="">
    <head>
       <meta charset="UTF-8">
