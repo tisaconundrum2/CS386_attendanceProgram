@@ -1,4 +1,5 @@
 <?php
+session_start();
 //phpinfo();
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
@@ -14,7 +15,7 @@ if (mysqli_connect_errno()) {
 }
 
 print_r( $_POST );
-if (!isset($_SESSION['user'])){$_SESSION['user']=-1;}
+if (!isset($_SESSION['user'])){$_SESSION['user']=-1;header('Location: index.php');}
 print_r( $_SESSION );
 ?>
 

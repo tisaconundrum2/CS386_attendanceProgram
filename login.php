@@ -7,10 +7,9 @@ if ($query->num_rows == 1){
 	echo "</br>log in successful";
 	$row=$query->fetch_array(MYSQLI_NUM);
 	$_SESSION['user']=$row[0];
-	echo "</br>User: ";
-	echo $row[0];
-	echo "</br>";
-	print_r($_SESSION);
+	header('Location: selectClass.php');
 }
 else
 	header('Location: index.php?p=l');
+
+?>
