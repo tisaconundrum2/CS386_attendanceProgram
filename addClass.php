@@ -2,12 +2,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><style type="text/css"></style><style type="text/css"></style><style type="text/css"></style><style type="text/css"></style><style type="text/css"></style><style type="text/css"></style><style type="text/css"></style><style type="text/css"></style>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script><meta name="robots" content="noindex"><link rel="canonical" href="http://codepen.io/anon/pen/XJvKrY">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="js/bootstrap-dropdown.js"></script><meta name="robots" content="noindex"><link rel="canonical" href="http://codepen.io/anon/pen/XJvKrY">
 <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="http://s.codepen.io/assets/reset/normalize.css">
 <link rel="stylesheet" href="style.css">
 <!--?php include("server.php"); ?-->
-<style type="text/css"></style></head><body>
+<style type="text/css"></style><style type="text/css"></style></head><body>
 <div class="form">
       
       
@@ -107,5 +108,6 @@ $('.tab a').on('click', function (e) {
 //@ sourceURL=pen.js
 </script>
 <script src="http://codepen.io/assets/editor/live/css_live_reload_init.js"></script>
+
 
 </body></html>
