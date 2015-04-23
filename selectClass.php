@@ -21,11 +21,6 @@
     margin-bottom: 0px;
 ">
 
-<<<<<<< HEAD
-	<form action="addClass.php" id="closeup" method="post">
-	<button class="button button-block">Add New Class</button>
-	</form>
-=======
   	<button class="button button-block">CS 136</button>
           </form>
 <form action="/" id="closeup" method="post" style="
@@ -44,7 +39,6 @@
     margin-top: 16px;
 ">Add New Class</button>
   </form>
->>>>>>> 09630bd5a41de3457ebda5413c8ddc02587273d2
 
 <form action="/" id="faraway" method="post">
 <button class="button button-block">My Page</button>
