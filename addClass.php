@@ -16,19 +16,14 @@
           <form action="/" method="post">
           
             <div class="field-wrap">
-            <label class="">Class<span class="req">*</span>
+            <label class="">Class e.g. CS 200<span class="req">*</span>
             </label>
             <input type="class" required="" autocomplete="off">
           </div>
           
-          <div class="field-wrap">
-            <label>
-              Password<span class="req">*</span>
-            </label>
-            <input type="password" required="" autocomplete="off">
-          </div>
           
-          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          
+          <p class="forgot"><a>e.g. CS200</a></p>
           
           <button class="button button-block">Add new Course</button>
           
