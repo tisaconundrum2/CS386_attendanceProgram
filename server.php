@@ -15,7 +15,7 @@ if (mysqli_connect_errno()) {
 }
 
 print_r( $_POST );
-if (!isset($_SESSION['user'])){$_SESSION['user']=-1;header('Location: index.php');}
+if (!isset($_SESSION['user'])||($_SESSION['user']==-1&&$_SERVER['REQUEST_URI']!='/index.php')){$_SESSION['user']=-1;header('Location: index.php');}
 print_r( $_SESSION );
 ?>
 

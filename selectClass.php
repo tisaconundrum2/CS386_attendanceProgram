@@ -15,7 +15,7 @@
   	<button class="button button-block">CS 136</button>
         </form>
 
-	<form action="/" id="closeup" method="post">
+	<form action="addClass.php" id="closeup" method="post">
 	<button class="button button-block">Add New Class</button>
 	</form>
 
