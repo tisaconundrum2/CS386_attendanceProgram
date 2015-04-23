@@ -10,8 +10,13 @@
         
         <div id="selClass" style="display: block;">   
           <h1>E Attendance</h1>
-          
 <?php
+$result=$mysqli->query("select u_fname, u_lname from se_user where u_id='$_SESSION[user]'");
+$fetch = $result->fetch_array(MYSQLI_NUM);
+
+	echo '<p class="forgot" style="margin-bottom: 0px; color: #FFFFFF;"><a></a>'.$fetch[1].' '.$fetch[0].'</p>';
+          
+
 $result=$mysqli->query("select c_id, c_title, c_number from se_uc natural join se_class where u_id ='$_SESSION[user]'");
 while ( $fetch = $result->fetch_assoc() ) { 
 	echo '<form action="/" method="post" style="margin-bottom: 0px;">';

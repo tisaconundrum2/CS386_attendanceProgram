@@ -27,7 +27,7 @@ include("server.php");
 	<?php } ?>
           <h1>Sign Up for Free</h1>
           
-          <form action="/" method="post">
+          <form action="signup.php" method="post">
           
           <div class="top-row">
             <div class="field-wrap">
@@ -51,13 +51,6 @@ include("server.php");
             </label>
             <input name="email" type="email" required="" autocomplete="off">
           </div>
-
-<div class="field-wrap">
-            <label>ID<span class="req">*</span>
-            </label>
-            <input name="id" type="ID" required="" autocomplete="off">
-          </div>
-
           
           <div class="field-wrap">
             <label>
