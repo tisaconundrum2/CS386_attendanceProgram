@@ -5,10 +5,10 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="js/bootstrap-dropdown.js"></script><meta name="robots" content="noindex"><link rel="canonical" href="http://codepen.io/anon/pen/XJvKrY">
 <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="normalize.css">
+
 <link rel="stylesheet" href="style.css">
-<!--?php include("server.php"); ?-->
-<style type="text/css"></style><style type="text/css"></style></head><body>
+
+</head><body>
 <div class="form">
       
       
@@ -45,17 +45,13 @@
     margin-bottom: 20px;
 ">
       <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" aria-expanded="false">Semester<span class="caret"></span></button>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Spring</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Summer</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fall</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Winter</a></li>  
-  
-          
-          
-        </ul>
-      </div>
+<label>
+    <select>
+        <option selected=""> Select Box </option>
+        <option>Short Option</option>
+        <option>This Is A Longer Option</option>
+    </select>
+</label>      </div>
     </div><div class="field-wrap" style="
     margin-bottom: 20px;
 ">
