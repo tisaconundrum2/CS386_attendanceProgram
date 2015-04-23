@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+table {
+	border-collapse: collapse;  
+	width: 100%;  
+	
+	font:21px georgia;
+	color: #000000;
+	line-height:24px;
+	letter-spacing:0.1em;
+	border:0px solid #a1a1a1;
+	padding:10px 10px; 
+	background:#dddddd;
+	width:100%;
+	border-radius:10px;
+}
+
+
+textarea {  
+	width: 500px;  
+	height: 200px;  
+}  
+
+label {
+	display: inline-block;
+	width: 200px;
+}
+
+#pageholdframe {
+	width:1000px;
+	height:auto;
+	left: 172px;
+	border:medium;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#999999;
+	padding:10px 10px;
+}
+
+#Content {
+	width:auto;
+	height:auto;
+	left: 172px;
+	border:medium;
+	margin-left: auto;
+	margin-right: auto;
+	padding:20px 20px; 
+}
+
+p {
+	font:21px georgia;
+	color: #000000;
+	line-height:24px;
+	letter-spacing:0.1em;
+	border:0px solid #a1a1a1;
+	padding:10px 10px; 
+	background:#dddddd;
+	width:auto;
+	border-radius:10px;
+}
+
+
+ul
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+h1 {
+font: 32px georgia;
+line-height: 24px;
+letter-spacing: 0.1em;
+color: #BEFAF7;
+text-shadow: black 0.01em 0.1em 0.2em;
+}
+
+
+h2{
+	font:25px georgia;
+	color: #FFFFFF;
+	line-height:24px;
+	letter-spacing:0.1em;
+}
+
+
+li
+{
+	display:inline;
+}
+
+a {
+	color: #990033
+}
+
+a:hover {
+	background-color: #00CCFF
+}
+
+#header {
+	width:auto;
+	height:auto;
+	z-index:1;
+	left: 438px;
+	top: 46px;
+}
+body {
+	background: url(background-gradient.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+
+#background {
+	width: 100%; 
+	height: 100%; 
+	position: fixed; 
+	left: 0px; 
+	top: 0px; 
+	z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+
+/* class=background */
+.header{
+	/*	border:0px solid #a1a1a1;
+	padding:0px 0px;
+	background-color:#AA0004;
+	opacity:0.7;
+	width:auto;
+	border-radius:2px;
+	font:Geneva, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	*/
+font-weight: bold;
+color: #FFFFFF;
+background-color: rgb(122,122,142);
+text-align: center;
+padding: 4px;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.background{
+	border:0px solid #a1a1a1;
+	padding:0px 0px; 
+	background:#dddddd;
+	width:auto;
+	border-radius:3px;
+}
+
+.error{
+	font-style:italic;
+	font:Arial, Helvetica, sans-serif;
+	color:#FF0000;
+	font-size: 15px;
+}
