@@ -2,7 +2,7 @@
 <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="http://s.codepen.io/assets/reset/normalize.css">
 <link rel="stylesheet" href="style.css">
-<?php include("server.php"); ?>
+<!--?php include("server.php"); ?-->
 <style type="text/css"></style></head><body>
 <div class="form">
   
@@ -11,11 +11,34 @@
         <div id="selClass" style="display: block;">   
           <h1>E Attendance</h1>
           
-          <form action="/" id="closeup" method="post">
+          <form action="/" id="closeup" method="post" style="
+    margin-bottom: 0px;
+">
 
   	<button class="button button-block">CS 136</button>
-          
-	<button class="button button-block">Add New Class</button></form>
+          </form>
+<form action="/" id="closeup" method="post" style="
+    margin-bottom: 0px;
+">
+
+  	<button class="button button-block">CS 136</button>
+          </form>
+<form action="/" id="closeup" method="post" style="
+    margin-bottom: 0px;
+">
+
+  	<button class="button button-block">CS 136</button>
+          </form><form action="/" id="closeup" method="post" style="
+    margin-bottom: 0px;
+">
+
+  	<button class="button button-block">CS 136</button>
+          </form>
+<form action="/" id="closeup" method="post">
+	<button class="button button-block" style="
+    margin-top: 16px;
+">Add New Class</button>
+  </form>
 
 <form action="/" id="faraway" method="post">
 <button class="button button-block">My Page</button>
@@ -24,7 +47,7 @@
 <form action="logout.php" id="faraway" method="post">
 <button class="button button-block">LogOut</button>
 </form>
-</form>
+
 
         </div>
         
@@ -66,4 +89,5 @@ $('.tab a').on('click', function (e) {
 //@ sourceURL=pen.js
 </script>
 <script src="http://codepen.io/assets/editor/live/css_live_reload_init.js"></script>
+
 </body></html>
