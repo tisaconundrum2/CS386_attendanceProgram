@@ -10,12 +10,21 @@ include("server.php");
 <div class="form">
       
       <ul class="tab-group">
+<?php if (isset($_GET['p'])&&$_GET['p']=='l'){ ?>
+        <li class="tab"><a href="#signup">Sign Up</a></li>
+        <li class="tab active"><a href="#login">Log In</a></li>
+<?php } else { ?>
         <li class="tab active"><a href="#signup">Sign Up</a></li>
         <li class="tab"><a href="#login">Log In</a></li>
+<?php } ?>
       </ul>
       
       <div class="tab-content">
-        <div id="signup" style="display: block;">   
+        <?php if (isset($_GET['p'])&&$_GET['p']=='l'){ ?>
+        <div id="signup" style="display: none;">  
+	<?php } else { ?> 
+        <div id="signup" style="display: block;">  
+	<?php } ?>
           <h1>Sign Up for Free</h1>
           
           <form action="/" method="post">
@@ -62,8 +71,12 @@ include("server.php");
           </form>
 
         </div>
-        
-        <div id="login" style="display: none;">   
+
+        <?php if (isset($_GET['p'])&&$_GET['p']=='l'){ ?>
+        <div id="login" style="display: block;">  
+	<?php } else { ?> 
+        <div id="login" style="display: none;">  
+	<?php } ?>
           <h1>Welcome Back!</h1>
           
           <form action="login.php" method="post">

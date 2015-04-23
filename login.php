@@ -13,4 +13,4 @@ if ($query->num_rows == 1){
 	print_r($_SESSION);
 }
 else
-	echo "log in failed";
+	header('Location: index.php?p=l');
