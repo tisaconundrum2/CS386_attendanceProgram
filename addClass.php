@@ -1,7 +1,7 @@
 <html class=""><head><meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><style type="text/css"></style><style type="text/css"></style><style type="text/css"></style><style type="text/css"></style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><style type="text/css"></style><style type="text/css"></style><style type="text/css"></style><style type="text/css"></style><style type="text/css"></style><style type="text/css"></style>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script><meta name="robots" content="noindex"><link rel="canonical" href="http://codepen.io/anon/pen/XJvKrY">
 <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="http://s.codepen.io/assets/reset/normalize.css">
@@ -18,17 +18,31 @@
         <div id="addClass" style="display: block;">   
           <h1>Add a Class</h1>
           
-          <form action="/" method="post">
-          
-            <div class="field-wrap" style="
-    margin-bottom: 20px;
+          <form action="/" method="post" style="
+    margin-bottom: 0px;
 ">
+          
+            <div style="
+    margin-bottom: 20px;
+" class="field-wrap">
             <label class="">Class Name<span class="req">*</span>
             </label>
             <input type="class" required="" autocomplete="off">
-  <div class="container" style="
-    margin-top: 10px;
-">
+  
+          </div>
+    
+          
+          
+          
+          <p class="forgot" style="
+    margin-bottom: 0px;
+"><a>e.g. CS200</a></p>
+          
+          
+          
+          </form>
+	<form action="/" method="post">
+<div class="container">
       <div class="dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" aria-expanded="false">Season
         <span class="caret"></span></button>
@@ -43,17 +57,27 @@
         </ul>
       </div>
     </div>
+  </form><form action="/" method="post">
+          
+            <div class="field-wrap" style="
+    margin-bottom: 20px;
+">
+            <label class="">YEAR<span class="req">*</span>
+            </label>
+            <input type="class" required="" autocomplete="off">
+  
           </div>
     
           
           
           
-          <p class="forgot"><a>e.g. CS200</a></p>
+          <p class="forgot"><a>e.g. 2000</a></p>
           
-          <button class="button button-block">Add new Course</button>
           
-          </form>
-	<form action="selectClass.php" method="post">
+          
+          </form><form action="selectClass.php" method="post">
+  <button class="button button-block">Search</button>
+  </form><form action="selectClass.php" method="post">
 	<button class="button button-block">Back</button>
 	</form>
 
