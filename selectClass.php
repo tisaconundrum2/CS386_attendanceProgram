@@ -26,7 +26,15 @@ while ( $fetch = $result->fetch_assoc() ) {
 ?>
 	
 	<form action="addClass.php" >
-	<button class="button button-block" style="margin-top: 16px;">Add New Class</button>
+	<button class="button button-block" style="margin-top: 16px;">
+<?php
+if (is_prof($_SESSION['user']))
+	echo "Create New Class";
+else
+	echo "Add New Class";
+?>
+
+</button>
   	</form>
 
 <form action="/" method="post">
