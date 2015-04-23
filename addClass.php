@@ -10,10 +10,8 @@
 <<<<<<< HEAD
 <!--?php include("server.php"); ?-->
 <style type="text/css"></style><style type="text/css"></style></head><body>
-=======
 <?php include("server.php"); ?>
 <style type="text/css"></style></head><body>
->>>>>>> 83d40c5228aa94504b7b67ca0def7216177fb345
 <div class="form">
       <div class="tab-content">
         <div id="addClass" style="display: block;">   
