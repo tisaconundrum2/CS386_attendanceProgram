@@ -45,13 +45,11 @@
     margin-bottom: 20px;
 ">
       <div class="dropdown">
-<label>
-    <select>
+    <select name="semester" style="display: block">
         <option selected=""> Select Box </option>
         <option>Short Option</option>
         <option>This Is A Longer Option</option>
-    </select>
-</label>      </div>
+    </select>      </div>
     </div><div class="field-wrap" style="
     margin-bottom: 20px;
 ">
